@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Caribbean Comidas</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/f42f4f2d2f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="0-style.css">
+</head>
+  
+<nav>
+    
+    <!--search box-->
+    <div class="recipe-search-box">
+        <input type="text" class="search-content" placeholder="Enter a recipe or country" id="search-input">
+        <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+    <!--end of search box-->
+    <!--nav buttton-->
+    <input type="checkbox" id="nav-active">
+    <label for="nav-active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="nav-wrapper">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="form.html">Add Reicpie</a></li>
+            <li>
+                <div class="ligtmeup">
+                        <i class="fa-solid fa-sun"></i>
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                        <i class="fa-solid fa-moon"></i>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+    <!--end of nav button-->
+    
+
+    
+</nav>
+<body onload = searchRecipeList()>
+    <div class="container">
+		<div class="recipe-wrapper">
+			<div class="recipe-search">
+               
+
+                <!--results-->
+				<div class="recipe-result">
+					<h2 class="title">Search Results</h2>
+					<div id="recipe">
+					
+					<!--Recipe Item-->
+					<div class="recipe-item">
+						<a href="#">
+								<div class="recipe-img">
+									<img src ="food.jpg" alt="recipe">
+								</div>
+								
+								<div class="recipe-name">
+									<h3>Aloo</h3>
+								</div>
+								
+								<a href="#" class="recipe-btn">Get Recipe</a>
+						</a>
+					</div>
+					<!--End of Recipe Item-->
+					
+					</div>
+				</div>
+                <!--results end-->
+
+                <!--recipe details-->
+				<div class="recipe-details">
+					<!--recipe close button-->
+					<button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
+					<!--recipe close button end-->
+
+					<!--recipe contents-->
+					<div class="recipe-details-content">
+						
+					</div>
+					<!--end of recipe contents-->
+				</div>
+				<!--end of recipe details-->
+            </div>
+        </div>
+    </div>
+    <script src="0-script.js"></script>
+</body>
+
+</html>
